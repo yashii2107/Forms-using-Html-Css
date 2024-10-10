@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppine' , sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#380036,#06baBA);
+}
+
+.container{
+    max-width: 750px;
+    width: 650px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.251);
+}
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 8px;
+    color: rgba(255, 255, 255, 0.768);
+    border-bottom: 1px solid silver;
+}
+
+
+.content{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px 0;
+}
+.input-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 20px;
+}
+
+.input-box :nth-child(2n){
+    justify-content: end;
+}
+ 
+
+
+ .input-box label, .gender-title{
+width: 95%;
+color: rgba(255, 255, 255, 0.722);
+font-weight: bold;
+margin: 5px 0;
+}
+.gender-title{
+    font-size: 16px;
+}
+.input-box input{
+    height: 35px;
+    width: 90%;
+    padding: 0 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+    font-size: 15px;
+}
+.gender-category{
+    color: white;
+}
+.gender-category label , .gender-category input{
+    cursor: pointer;
+}
+.button-container{
+    margin: 5px 0;
+}
+.button-container button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgb(180, 62, 62), purple);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.button-container button:hover{
+
+
+background-image: linear-gradient(to right,purple,  rgb(180, 62, 62));
+}
